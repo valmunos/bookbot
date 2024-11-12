@@ -21,6 +21,7 @@ def main():
     last_line = '--- End report ---'
 
     # iterate through sorted counter dict and format strs with char and count
+    # then joins the list of strings with the newline character.
     main_body = '\n'.join([
         f"The '{k}' character was found {v} times" 
         for k, v in sorted(counter.items(), key=lambda x: x[1], reverse=True)
